@@ -1,2 +1,2 @@
-# dive-discussions
-Workflows &amp; Feature Discussions
+# Div-e Discussions
+Workflows &amp; feature discussions
