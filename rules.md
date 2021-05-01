@@ -2,7 +2,7 @@
 
 This guideline is meant for *every* programming task, no matter if it is a new release, a hotfix, a ptach, a new feature or just some experiment.
 
-#### Rule No.1: NEVER code on the `dev` branch!
+### Rule No.1: NEVER code on the `dev` branch!
 
 The `develop` or `dev` branch is the working basis of our staging systems and acts as **a source of truth** for all developers. 
 
@@ -14,7 +14,7 @@ It goes without saying that the `master` branch is also taboo.
 
 The only branch that will ever be merged into `master` is `dev`.
 
-#### Rule No. 2: Transparency is key!
+### Rule No. 2: Transparency is key!
 
 Commit often and use short but comprehensive commit messages. Avoid huge commits.
 
@@ -28,7 +28,7 @@ You do not need to push every single commit, though. But if you have something c
 
 It makes sense to commit half-automated tasks (like formatting code) separately.
 
-#### Rule No. 3:  Communicate!
+### Rule No. 3:  Communicate!
 
 Please do communicate proactively with your colleagues or supervisors. 
 
@@ -36,7 +36,7 @@ A supervisor will be happy to know you are still alive and working on the projec
 
 It is no problem if you have to cancel a meeting or face any issues with your work or get behind schedule, we are all human. But it becomes a problem if nobody knows, so please be transparent. See rule No. 2.
 
-#### Rule No. 4: Ask questions!
+### Rule No. 4: Ask questions!
 
 Learning new things and figuring out ways to solve problems - oftentimes on your own - is part of your job. But do not wait too long before you ask questions.
 
