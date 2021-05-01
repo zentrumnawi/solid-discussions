@@ -74,9 +74,9 @@ If you want to work on another branch, make sure all your changes are committed 
 
 ### 5. Adjust the version
 
-#### (SOLID Frontend)
+#### SOLID Frontend
 
-SOLID makes use of [SemVer](https://semver.org/) to display and maintain version numbers. The mode of used might be discussed in the future, but for the time being, the version should be adjusted manually with every merge to `dev`. Since the Frontend does not expose an API where others depend on, it's not that critical. It is just a helper for our internal accounting.
+SOLID makes use of [SemVer](https://semver.org/) to display and maintain version numbers. The mode of use might (and should) be discussed in the future, but for the time being, the version should be adjusted manually with every merge to `dev`. Since the Frontend does not expose an API where others depend on, it's not that critical. It is just a helper for our internal accounting.
 
 The version is in the main repository's `package.json` (Line 3), please follow the `Major.minor.patch_tag` to the best of your knowledge; we have no real conventions yet.
 
