@@ -24,7 +24,7 @@ The standard flow will be described by git console commands. You can, of course,
 
 If you are going to work on a new task, follow these steps:
 
-##### 1. Create a new branch from `dev`
+#### 1. Create a new branch from `dev`
 
 Switch to the `dev` branch and pull the actual version from the server to ensure that your local `dev` branch is at the same version as on the server.
 
@@ -38,7 +38,7 @@ Now, create a new branch with an adequate name (the flag `-b` will create a new 
 
 Start coding! 
 
-#### 2. Commit your changed files
+### 2. Commit your changed files
 
 As soon as you have finished some smaller sub task and saved your files, commit your changes.
 
@@ -50,7 +50,7 @@ You can also commit all your changes by using
 
 This command will take all changed files, add them to the index and commit them in one go. You will be asked to type a commit message - try to be short and precise.
 
-#### 3. Push your changes to the server
+### 3. Push your changes to the server
 
 As soon as you have made enough changes to show them to others (this should be as early as possible), push them to the server:
 
@@ -58,7 +58,7 @@ As soon as you have made enough changes to show them to others (this should be a
 
 If your new branch is yet unknown to the server, it will tell you to use `git push --set-upstream origin <branch name>` . Follow these instructions - but it's sufficient to remember `git push`.
 
-#### 4. Create a Pull Request on GitHub
+### 4. Create a Pull Request on GitHub
 
 If you want others to take a look at your code (yes, you want!), go to GitHub and create a pull request (**PR**). 
 
@@ -72,9 +72,17 @@ GitHub Actions will even start to test and/or build the project after each push.
 
 If you want to work on another branch, make sure all your changes are committed and follow the above instructions to start to a new branch or switch to an existing one with `git checkout <another-branch>`.
 
-#### 5. Merge the pull request
+### 5. Adjust the version
 
-If your task is finished and the reviewer approved the PR, you can merge the new branch to the `dev` branch. This should be done on GitHub and not locally (although it is possible). 
+#### (SOLID Frontend)
+
+SOLID makes use of [SemVer](https://semver.org/) to display and maintain version numbers. The mode of used might be discussed in the future, but for the time being, the version should be adjusted manually with every merge to `dev`. Since the Frontend does not expose an API where others depend on, it's not that critical. It is just a helper for our internal accounting.
+
+The version is in the main repository's `package.json` (Line 3), please follow the `Major.minor.patch_tag` to the best of your knowledge; we have no real conventions yet.
+
+### 6. Merge the pull request
+
+If your task is finished, versioned and the reviewer approved the PR, you can merge the new branch to the `dev` branch. This should be done on GitHub and not locally (although it is possible). 
 
 Merging on GitHub has the advantage that it is a guided, transparent and comprehensive process and the `dev` branch on the server will always be the most actual.
 
