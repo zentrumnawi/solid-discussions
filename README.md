@@ -9,4 +9,4 @@ Workflows &amp; feature discussions
 * [Versioning](versioning.md)
 * 
 ----
-* [SOLID Backend local setup ](soli-backend-setup.md)
+* [SOLID Backend local setup ](solid-backend-setup.md)
