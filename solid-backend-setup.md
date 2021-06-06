@@ -7,4 +7,4 @@
 5. Create a superuser aka admin account: `docker-compose run --rm web python manage.py createsuperuser`. You will be prompted to provide a username and password (rest ist not mandatory).
 6. Start the containers with `docker-compose up` (`-d` flag for detached mode).
 7. The Api is now available under `localhost:8000`.
-
+8. The admin interface can now be accessed via `localhost:8000/admin`with the prior created admin account.
