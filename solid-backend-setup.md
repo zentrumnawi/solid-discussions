@@ -1,4 +1,4 @@
-### How to setup a SOLID Backend
+### How to setup a s.o.l.i.d. Backend
 
 1. Install `docker-compose` via the appropriate methode for your OS. See [here](https://docs.docker.com/compose/install/).
 2. Clone the repository you wish to build from our Github organization [here](https://github.com/zentrumnawi) and make sure to checkout the correct branch.
