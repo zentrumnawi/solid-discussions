@@ -1,4 +1,4 @@
-# SOLID Coding Rules 
+# s.o.l.i.d. Coding Rules 
 
 This guideline is meant for *every* programming task, no matter if it is a new release, a hotfix, a ptach, a new feature or just some experiment.
 
