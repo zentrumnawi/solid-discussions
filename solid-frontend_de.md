@@ -2,7 +2,7 @@
 
 Diese Anleitung beschreibt, wie das s.o.l.i.d-Frontend lokal zum Entwickeln betrieben werden kann.
 
-Hierfür müssen einige Programme und Tools installiert und eingerichtet werden - es empfiehlt sich aber, erst alles durchzulesen und dann erst zu installieren.
+Hierfür müssen einige Programme und Tools installiert und eingerichtet werden - es empfiehlt sich aber, erst alles durchzulesen und dann erst mit der Installation Schritt für Schritt loszulegen.
 
 1. Git: https://git-scm.com/downloads | https://gitforwindows.org/
 2. Node.js: https://nodejs.org/de/download/
