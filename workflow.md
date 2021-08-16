@@ -2,15 +2,15 @@
 
 This short guide introduces the standard workflow we adapted during our work at the SOLID Frontend. The basic idea may also apply to the backend development process.
 
-Please keep in mind the rules defined in the SOLID Programming Rules
+Please keep in mind the rules defined in the [SOLID Programming Rules](rules.md).
 
 **This instruction is no replacement for reading into the Git collaboration concept!** 
 
-It is just a reminder to avoid merge conflicts and confusion.
+This is just a reminder to avoid merge conflicts and confusion.
 
 #### Prerequisites
 
-1. GitHub needs to be set up correctly on your machine for this to work, e.g. a connection to your GitHub Account should be established.
+1. GitHub needs to be set up correctly on your machine for this to work, e.g. a connection to your GitHub Account should be established, ideally with SSH authentication.
 2. You should already have cloned the repository into a folder on your local machine. 
 3. You should have installed the `yarn package manager` (for Frontend development)
 4. You should have an IDE installed - if you have no other preferences, we recommend VSCode.
@@ -18,7 +18,7 @@ It is just a reminder to avoid merge conflicts and confusion.
 
 These are just the basic instructions - it is less likely to run into problems if you follow them closely. Git is far more powerful, of course, and you can do a lot more with this tool.
 
-The standard flow will be described by git console commands. You can, of course, use your IDE's (e.g. VSCode) Git tools which is at least recommended for commiting.
+The standard flow will be described by git console commands. You can, of course, use your IDE's (e.g. VSCode) Git tools which is at least recommended for commiting. In practice, you may end up using both in parallel - which is no problem since the IDE buttons just invoke the console commands.
 
 ## How to Git in SOLID
 
