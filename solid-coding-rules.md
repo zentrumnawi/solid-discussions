@@ -6,7 +6,7 @@ This guideline is meant for *every* programming task, no matter if it is a new r
 
 The `develop` or `dev` branch is the working basis of our staging systems and acts as **a source of truth** for all developers. 
 
-If you begin working on a new task, *always* start from `dev` and create a new branch (see [Git workflow](workflow.md)). 
+If you begin working on a new task, *always* start from `dev` and create a new branch (see [Git workflow](solid-git-workflow.md)). 
 Name it carefully and comprehensively, i.e. the name should contain information about what will be worked on, and name it with your initials, e.g. `bb/component-fix` or `bb/audio-feature`. 
 
 All programming tasks should be independent from other programming endeavours, if possible. 
