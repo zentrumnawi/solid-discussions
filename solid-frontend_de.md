@@ -5,8 +5,9 @@ Diese Anleitung beschreibt, wie das s.o.l.i.d-Frontend lokal zum Entwickeln betr
 Hierfür müssen einige Programme und Tools installiert und eingerichtet werden - es empfiehlt sich aber, erst alles durchzulesen und dann erst zu installieren.
 
 1. Git: https://git-scm.com/downloads | https://gitforwindows.org/
-2. Yarn (classic): https://classic.yarnpkg.com/en/docs/install
-3. VSCode: https://code.visualstudio.com/Download (Vorschlag)
+2. Node.js: https://nodejs.org/de/download/
+3. Yarn (classic): https://classic.yarnpkg.com/en/docs/install
+4. VSCode: https://code.visualstudio.com/Download (Vorschlag)
 
 Außerdem ist ein [GitHub](https://github.com)-Account nötig, um Änderungen problemlos hochladen zu können. 
 
@@ -23,6 +24,10 @@ Git stellt auch die Verbindung mit der Entwicklungslpattform *GitHub* her, auf d
 Git ist an sich ein Kommandozeilen-Tool, es gibt aber auch Benutzeroberflächen und in die meisten Entwicklungsumgebungen (so auch in VSCode) sind die üblichen Git-Funktionen gut integriert.
 
 Git muss auf dem jeweiligen Betriebssystem installiert werden. Für Windows-User wird *Git for Windows* empfohlen: https://gitforwindows.org/
+
+## Node.js - Javascript Laufzeitumgebung
+
+Damit Javascript auf dem Rechner ausgeführt und verarbeitet werden kann, muss Node.js installiert werden.
 
 ## Yarn - Package Manager
 
