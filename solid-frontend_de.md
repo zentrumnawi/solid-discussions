@@ -8,7 +8,7 @@ Hierfür müssen einige Programme und Tools installiert und eingerichtet werden:
 2. Yarn (classic): https://classic.yarnpkg.com/en/docs/install
 3. VSCode: https://code.visualstudio.com/Download (Vorschlag)
 
-Außerdem ist ein GitHub-Account nötig, um die Resultate problemlos hochladen zu können. Für den Umgang mit Git gibt es eine eigene Anleitung.
+Außerdem ist ein GitHub-Account nötig, um die Resultate problemlos hochladen zu können. Für den Umgang mit Git gibt es eine eigene [Anleitung](solid-git-workflow.md).
 
 ## Git - Versionierungstool
 
@@ -77,8 +77,8 @@ Die folgenden Schritte können im Prinzip von der Kommandozeile (*Git Bash* oder
 3. VSCode starten, den angelegten (leeren) Ordner öffnen und ein Terminal aufrufen (in der Standardkonfiguration mit `Strg+ö`). Das s.o.l.i.d.-Frontend-Repository wird mit dem Befehl `git clone https://github.com/zentrumnawi/solid-frontend ` in den aktuellen Ordner geklont.
 4. Die benötigten Packages werden mit dem Befehl `yarn` installiert, dies dauert eine Weile.
 5. Nach Abschluss der Installation kann das Frontend lokal gestartet werden: `yarn run serve <app-name>`. Nach Abschluss des Startprozesses wird eine URL (`http://localhost:4200`) angezeigt, mit der sich ein Browserfenster öffnet, in welchem die App ausgespielt wird und angesehen werden kann. Die Daten werden aus den Server-Schnittstellen des Staging-Systems geladen.
-6. **Wichtig: Bevor der Code geändert wird, muss ein neuer branch im repository erzeugt werden!** Damit wird sichergestellt, dass alle Änderungen getrennt vom funktionierenden Status Quo sind. Für die Benutzung von Git im s.o.l.i.d.-Projekt gibt es eine eigene Anleitung.
+6. **Wichtig: Bevor der Code geändert wird, muss ein neuer branch im repository erzeugt werden!** Damit wird sichergestellt, dass alle Änderungen getrennt vom funktionierenden Status Quo sind. Für die Verwendung von Git im s.o.l.i.d.-Projekt gibt es eine eigene [Anleitung](solid-git-workflow).
 
 Im Prinzip kann jetzt "entwickelt" werden. Nach jeder gespeicherten Änderung im Code wird die App neu geladen und kann im Browser direkt angesehen und getestet werden.
 
-Alle Änderungen sollten gemäß unserer Git-Richtlinien regelmäßig *committed* werden.
+Alle Änderungen sollten gemäß unserer [Git-Coding-Rules](solid-coding-rules.md) regelmäßig *committed* werden.
