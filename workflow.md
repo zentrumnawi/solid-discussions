@@ -78,7 +78,7 @@ If you want to work on another branch, make sure all your changes are committed 
 
 SOLID makes use of [SemVer](https://semver.org/) to display and maintain version numbers. The mode of use might (and should) be discussed in the future, but for the time being, the version should be adjusted manually with every merge to `dev`. Since the Frontend does not expose an API where others depend on, it's not that critical. It is just a helper for our internal accounting.
 
-The version is in the main repository's `package.json` (Line 3), please follow the `Major.minor.patch_tag` to the best of your knowledge; we have no real conventions yet.
+The version is in the main repository's `package.json` (Line 3), please follow the `Major.minor.patch_tag` to the best of your knowledge; we have no real conventions yet. If in doubt, ask a colleague.
 
 ### 6. Merge the pull request
 
@@ -92,9 +92,9 @@ Remember to pull your dev branch after the merge to be up to date (see step 1).
 
 The merged branch will be deleted on the server - but not locally, so be careful not to work in your old branch (you may delete it also locally using `git branch -d <branch-name>`). If you need to make changes, create a new branch (i.e. repeat the process starting with step 1).
 
-#### 6. Push to staging
+### 7. Push to staging
 
-Once, a new patch is merged to the dev branch, it will be automatically deployed on the staging system by the GitHub Actions and it will be visible to the public.
+Once a new patch is merged to the dev branch, it will be automatically deployed on the staging system by the GitHub Actions and it will be visible to the public.
 
 
 
