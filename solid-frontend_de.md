@@ -27,7 +27,7 @@ Git muss auf dem jeweiligen Betriebssystem installiert werden. Für Windows-User
 
 ## Node.js - Javascript Laufzeitumgebung
 
-Damit Javascript auf dem Rechner ausgeführt und verarbeitet werden kann, muss Node.js installiert werden.
+Damit Javascript auf dem Rechner ausgeführt und verarbeitet werden kann, muss Node.js installiert werden: https://nodejs.org/de/download/
 
 ## Yarn - Package Manager
 
