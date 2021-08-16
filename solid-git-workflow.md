@@ -1,8 +1,8 @@
-# SOLID Git Workflow
+# s.o.l.i.d. Git Workflow
 
-This short guide introduces the standard workflow we adapted during our work at the SOLID Frontend. The basic idea may also apply to the backend development process.
+This short guide introduces the standard workflow we adapted during our work at the s.o.l.i.d. Frontend. The basic idea may also apply to the backend development process.
 
-Please keep in mind the rules defined in the [SOLID Programming Rules](rules.md).
+Please keep in mind the rules defined in the [s.o.l.i.d. Programming Rules](solid-coding-rules.md).
 
 **This instruction is no replacement for reading into the Git collaboration concept!** 
 
@@ -20,7 +20,7 @@ These are just the basic instructions - it is less likely to run into problems i
 
 The standard flow will be described by git console commands. You can, of course, use your IDE's (e.g. VSCode) Git tools which is at least recommended for commiting. In practice, you may end up using both in parallel - which is no problem since the IDE buttons just invoke the console commands.
 
-## How to Git in SOLID
+## How to Git in s.o.l.i.d.
 
 If you are going to work on a new task, follow these steps:
 
@@ -74,9 +74,9 @@ If you want to work on another branch, make sure all your changes are committed 
 
 ### 5. Adjust the version
 
-#### SOLID Frontend
+#### s.o.l.i.d. Frontend
 
-SOLID makes use of [SemVer](https://semver.org/) to display and maintain version numbers. The mode of use might (and should) be discussed in the future, but for the time being, the version should be adjusted manually with every merge to `dev`. Since the Frontend does not expose an API where others depend on, it's not that critical. It is just a helper for our internal accounting.
+s.o.l.i.d. makes use of [SemVer](https://semver.org/) to display and maintain version numbers. The mode of use might (and should) be discussed in the future, but for the time being, the version should be adjusted manually with every merge to `dev`. Since the Frontend does not expose an API where others depend on, it's not that critical. It is just a helper for our internal accounting.
 
 The version is in the main repository's `package.json` (Line 3), please follow the `Major.minor.patch_tag` to the best of your knowledge; we have no real conventions yet. If in doubt, ask a colleague.
 
