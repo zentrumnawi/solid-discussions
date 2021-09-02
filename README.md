@@ -12,4 +12,4 @@ Workflows &amp; feature discussions
 * [s.o.l.i.d. Backend local setup ](solid-backend-setup.md)
 * [s.o.l.i.d. Frontend local setup (DE)](solid-frontend_de.md)
 ----
-* [s.o.l.i.d. Frontend release](solid-freontend-release.md)
+* [s.o.l.i.d. Frontend release](solid-frontend-release.md)
