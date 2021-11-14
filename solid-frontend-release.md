@@ -4,4 +4,4 @@
 ![image](https://user-images.githubusercontent.com/13869236/141685508-f77ab652-79b8-4f59-96e7-5c593e3b91cf.png)
 
 
-Falls es einen Problem gibt, müssen Release UND Tag gelöscht werden. Danach kann der Tag neu erstellt werden.
+Falls es ein Problem gibt, müssen Release UND Tag gelöscht werden. Danach kann der Tag neu erstellt werden.
