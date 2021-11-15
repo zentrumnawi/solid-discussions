@@ -5,7 +5,9 @@
 5. Eine Release-Message schreiben und die s.o.l.i.d.-Version mit angeben.
 6. Im Web-Interface(!) einen _Tag_ auf den Merge-Commit bzw. `master` erstellen im Format `<appname>-vX.Y.Z` (z.B. `dive-vX.Y.Z`)
 ![image](https://user-images.githubusercontent.com/13869236/141685508-f77ab652-79b8-4f59-96e7-5c593e3b91cf.png)
+
 Hinweis: Die App-Version ist nicht identisch mit der s.o.l.i.d. Version!
+
 7. `Publish Release`
 
 Nach dem publishing des Releases sollte ein build-Prozess nur für diese App inklusive Deployment angestoßen werden.
