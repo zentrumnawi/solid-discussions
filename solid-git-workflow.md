@@ -10,13 +10,13 @@ This is just a reminder to avoid merge conflicts and confusion.
 
 #### Prerequisites
 
-1. GitHub needs to be set up correctly on your machine for this to work, e.g. a connection to your GitHub Account should be established, preferably with SSH authentication.
+1. GitHub needs to be set up correctly on your machine for this to work, e.g. a connection to your GitHub Account should be established, preferably with [SSH authentication](https://docs.github.com/en/authentication/connecting-to-github-with-ssh).
 2. You should already have cloned the repository into a folder on your local machine. 
-3. You should have installed the `yarn package manager` (for Frontend development)
+3. You should have installed the `yarn package manager` (for Frontend development - refer to the [Frontend setup manual](solid-frontend_de.md).
 4. You should have an IDE installed - if you have no other preferences, we recommend VSCode.
 5. You should be able to open and use a terminal.
 
-These are just the basic instructions - it is less likely to run into problems if you follow them closely. Git is far more powerful, of course, and you can do a lot more with this tool.
+These are just the basic instructions - it is less likely to run into problems if you follow them closely. Git is far more powerful, of course, and you can do a lot more with this tool. Feel free to enhance this manual.
 
 The standard flow will be described by git console commands. You can, of course, use your IDE's (e.g. VSCode) Git tools which is at least recommended for commiting. In practice, you may end up using both in parallel - which is no problem since the IDE buttons just invoke the console commands.
 
