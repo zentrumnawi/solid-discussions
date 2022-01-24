@@ -10,7 +10,7 @@ This is just a reminder to avoid merge conflicts and confusion.
 
 #### Prerequisites
 
-1. GitHub needs to be set up correctly on your machine for this to work, e.g. a connection to your GitHub Account should be established, ideally with SSH authentication.
+1. GitHub needs to be set up correctly on your machine for this to work, e.g. a connection to your GitHub Account should be established, preferably with SSH authentication.
 2. You should already have cloned the repository into a folder on your local machine. 
 3. You should have installed the `yarn package manager` (for Frontend development)
 4. You should have an IDE installed - if you have no other preferences, we recommend VSCode.
