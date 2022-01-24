@@ -12,7 +12,7 @@ This is just a reminder to avoid merge conflicts and confusion.
 
 1. GitHub needs to be set up correctly on your machine for this to work, e.g. a connection to your GitHub Account should be established, preferably with [SSH authentication](https://docs.github.com/en/authentication/connecting-to-github-with-ssh).
 2. You should already have cloned the repository into a folder on your local machine. 
-3. You should have installed the `yarn package manager` (for Frontend development - refer to the [Frontend setup manual](solid-frontend_de.md).
+3. You should have installed the `yarn package manager` (at least for Frontend development; refer to the [Frontend setup manual](solid-frontend_de.md)).
 4. You should have an IDE installed - if you have no other preferences, we recommend VSCode.
 5. You should be able to open and use a terminal.
 
