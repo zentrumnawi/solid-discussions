@@ -40,9 +40,9 @@ Start coding!
 
 ### 2. Commit your changed files
 
-As soon as you have finished some smaller sub task and saved your files, commit your changes.
+As soon as you have finished some smaller sub task and saved your files, _commit_ your changes.
 
-It is recommended to use the Git Tools of VSCode, which are rather comfortable.
+It is helpful to use the Git UI of VSCode, which makes things rather comfortable.
 
 You can also commit all your changes by using
 
@@ -56,21 +56,21 @@ As soon as you have made enough changes to show them to others (this should be a
 
 ​	`git push`
 
-If your new branch is yet unknown to the server, it will tell you to use `git push --set-upstream origin <branch name>` . Follow these instructions - but it's sufficient to remember `git push`.
+If your new branch is yet unknown to the server it will tell you to use `git push --set-upstream origin <branch name>`. Follow these instructions - it's sufficient to remember `git push`.
 
 ### 4. Create a Pull Request on GitHub
 
-If you want others to take a look at your code (yes, you want!), go to GitHub and create a pull request (**PR**). 
+If you want others to take a look at your code (yes, you want! See rule [No. 2](solid-coding-rules.md)), go to GitHub and create a pull request (**PR**). 
 
 Newly pushed branches show up on the code tab and the button `create pull request` should be right there, so it's very simple.
 
-Write a PR message and explain what this branch is for. Assign a reviewer.
+Write a PR message and explain what this branch is for. Assign a _reviewer_.
 
 Continue working and pushing - all new commits will be integrated in the pull request. 
 
-GitHub Actions will even start to test and/or build the project after each push. If something fails, you will be notified and can take action. If the reviewer has comments or suggests changes, apply the changes and push again.
+GitHub Actions will even start to test and/or build the project after each push. If something fails, you will be notified and can take action. If the reviewer has comments or suggests changes, apply the changes, commit and push again.
 
-If you want to work on another branch, make sure all your changes are committed and follow the above instructions to start to a new branch or switch to an existing one with `git checkout <another-branch>`.
+If you want to work on another branch, **make sure all your changes are committed** and follow the above instructions to start to a new branch or switch to an existing one with `git checkout <another-branch>`. If you do not want to commit (why wouldn't you?), you may [stash](https://www.git-scm.com/docs/git-stash) your changes.
 
 ### 5. Adjust the version
 
@@ -80,21 +80,22 @@ s.o.l.i.d. makes use of [SemVer](https://semver.org/) to display and maintain ve
 
 The version is in the main repository's `package.json` (Line 3), please follow the `Major.minor.patch_tag` to the best of your knowledge; we have no real conventions yet. If in doubt, ask a colleague.
 
+Since the s.o.l.i.d. Frontend is a monorepo but the apps are released and deployed independently, there is a difference between the s.o.l.i.d. version (i.e. the actual status of the repository's `dev` branch) and an app's release version. The release version (see [release howto](solid-frontend-release.md)) must be set manually. The major/minor/patch basics apply as well.
+
 ### 6. Merge the pull request
 
-If your task is finished, versioned and the reviewer approved the PR, you can merge the new branch to the `dev` branch. This should be done on GitHub and not locally (although it is possible). 
+If your task is finished, versioned and the reviewer approved the PR, you can merge the new branch to the `dev` branch. It is recommended to do this on GitHub and not locally (although it is possible).
 
 Merging on GitHub has the advantage that it is a guided, transparent and comprehensive process and the `dev` branch on the server will always be the most actual.
 
 Merging locally will result in a local `dev` branch which is newer than on the server. This interferes with the "one source of truth"-idea since the actual source of truth is not accessible to everybody. So you should rather do it on GitHub and everything will be fine.
 
-Remember to pull your dev branch after the merge to be up to date (see step 1).
+**Important:** Remember to pull your `dev` branch after the merge to be up to date (see step 1). New branches should always be based on the most recent `dev` branch.
 
-The merged branch will be deleted on the server - but not locally, so be careful not to work in your old branch (you may delete it also locally using `git branch -d <branch-name>`). If you need to make changes, create a new branch (i.e. repeat the process starting with step 1).
+The merged branch will be deleted on the server - but not locally, so be careful not to work in your old branch (you may delete it also locally using `git branch -d <branch-name>`). If you need to make changes, it is recommended to create a new branch (i.e. repeat the process starting with step 1).
 
 ### 7. Push to staging
 
-Once a new patch is merged to the dev branch, it will be automatically deployed on the staging system by the GitHub Actions and it will be visible to the public.
-
+Once a new patch is merged to the dev branch, it will be automatically deployed on the staging system by the GitHub Actions and it will be visible to the public (or rather to those who know where to look).
 
 
