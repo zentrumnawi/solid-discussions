@@ -18,7 +18,7 @@ This is just a reminder to avoid merge conflicts and confusion.
 
 These are just the basic instructions - it is less likely to run into problems if you follow them closely. Git is far more powerful, of course, and you can do a lot more with this tool. Feel free to enhance this manual.
 
-The standard flow will be described by git console commands. You can, of course, use your IDE's (e.g. VSCode) Git tools which is at least recommended for commiting. In practice, you may end up using both in parallel - which is no problem since the IDE buttons just invoke the console commands.
+The standard flow will be described by git console commands. You can, of course, use your IDE's (e.g. VSCode) Git tools which is at least recommended for commiting. In practice, you may end up using both in parallel - which is no problem since the IDE buttons just invoke the console commands. But using the commandline is sometimes more transparent.
 
 ## How to Git in s.o.l.i.d.
 
@@ -26,7 +26,7 @@ If you are going to work on a new task, follow these steps:
 
 #### 1. Create a new branch from `dev`
 
-Switch to the `dev` branch and pull the actual version from the server to ensure that your local `dev` branch is at the same version as on the server.
+Switch to the `dev` branch and _pull_ the actual version from the server to ensure that your local `dev` branch is at the same version as on the server:
 
 ​	```git checkout dev```
 
