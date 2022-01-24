@@ -7,21 +7,21 @@ This guideline is meant for *every* programming task, no matter if it is a new r
 The `develop` or `dev` branch is the working basis of our staging systems and acts as **a source of truth** for all developers. 
 
 If you begin working on a new task, *always* start from `dev` and create a new branch (see [Git workflow](solid-git-workflow.md)). 
-Name it carefully and comprehensively, i.e. the name should contain information about what will be worked on, and name it with your initials, e.g. `bb/component-fix` or `bb/audio-feature`. 
+Name it carefully and comprehensively: The name should contain information about what will be worked on and the branch should be named with your initials, e.g. `bb/component-fix` or `bb/audio-feature`. 
 
-All programming tasks should be independent from other programming endeavours, if possible. 
+As a rule, all programming tasks within a branch should be independent from other programming endeavours. Sometimes it makes sense to collect smaller tasks in one branch or to fix a few small issues in the next feature branch.
 
-It goes without saying that the `master` branch is also taboo.
+It goes without saying that the `master` branch is also **taboo**.
 
-The only branch that will ever be merged into `master` is `dev`.
+The only branch that will _ever_ be merged into `master` is `dev`!
 
 ### Rule No. 2: Transparency is key!
 
-Commit often and use short but comprehensive commit messages. Avoid huge commits.
+Commit often and use short but comprehensive commit messages. Avoid huge commits. You may use [GitHub's automated fix/close syntax](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword)
 
 As a rule of thumb: A commit should encompass one self-contained sub task. E.g. if you change a variable name and alter three files - those three files should be in the commit. 
 
-Even if you work on several independent things in parallel, it may be a good idea to commit them separately: An independet Reviewer should be able to easily understand what you did.
+Even if you work on several independent things in parallel, it may be a good idea to commit them separately: An independent Reviewer should be able to easily understand what you did.
 
 As soon as you have made some progress on your task and commited some new code, create a **Pull Request** and assign a **Reviewer** on GitHub, *even if the task is not yet finished*. You can continue pushing and the reviewer can comment, ask questions and hint at solutions.
 
