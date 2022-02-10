@@ -48,7 +48,7 @@ You can also commit all your changes by using
 
 ​	```git commit -a ```
 
-This command will take all changed files, add them to the index and commit them in one go. You will be asked to type a commit message - try to be short and precise. You can make us of the [Git automation keywords](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword).
+This command will take all changed files, add them to the index and commit them in one go. You will be asked to type a commit message - try to be short and precise. You may use  the [Git automation keywords](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword) - but keep in mind that it should only be used if an issue is really fixed and can be closed.
 
 ### 3. Push your changes to the server
 
