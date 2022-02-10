@@ -42,13 +42,13 @@ Start coding!
 
 As soon as you have finished some smaller sub task and saved your files, _commit_ your changes.
 
-It is helpful to use the Git UI of VSCode, which makes things rather comfortable.
+It is helpful to use the Git UI of VSCode, which makes things rather comfortable - especially if you want to put your changed files in different commits.
 
 You can also commit all your changes by using
 
 ​	```git commit -a ```
 
-This command will take all changed files, add them to the index and commit them in one go. You will be asked to type a commit message - try to be short and precise.
+This command will take all changed files, add them to the index and commit them in one go. You will be asked to type a commit message - try to be short and precise. You can make us of the [Git automation keywords](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword).
 
 ### 3. Push your changes to the server
 
