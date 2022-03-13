@@ -72,7 +72,17 @@ GitHub Actions will even start to test and/or build the project after each push.
 
 If you want to work on another branch, **make sure all your changes are committed** and follow the above instructions to start to a new branch or switch to an existing one with `git checkout <another-branch>`. If you do not want to commit (why wouldn't you?), you may [stash](https://www.git-scm.com/docs/git-stash) your changes.
 
-### 5. Adjust the version
+### 5. Collaborating
+
+If you are collaborating with colleagues (co-authoring) on a PR, others may push commits to the same branch, resulting in an `origin` branch which is never than your local branch. 
+
+This is going to result in merge conflicts if you try to push your next commit. You will then have to `pull` the branch and merge it into your local branch. Usually, this is a guided process and works fine, but sometimes it can get a little messy or confusing. 
+
+So remember to `git pull` **before** you continue working if someone else has been pushing changes.
+
+Doing so may save you some trouble, although the procedure is perfectly git standard and considered normal.
+
+### 6. Adjust the version
 
 #### s.o.l.i.d. Frontend
 
@@ -82,7 +92,7 @@ The version is in the main repository's `package.json` (Line 3), please follow t
 
 Since the s.o.l.i.d. Frontend is a monorepo but the apps are released and deployed independently, there is a difference between the s.o.l.i.d. version (i.e. the actual status of the repository's `dev` branch) and an app's release version. The release version (see [release howto](solid-frontend-release.md)) must be set manually. The major/minor/patch basics apply as well.
 
-### 6. Merge the pull request
+### 7. Merge the pull request
 
 If your task is finished, versioned and the reviewer approved the PR, you can merge the new branch to the `dev` branch. It is recommended to do this on GitHub and not locally (although it is possible).
 
@@ -94,7 +104,7 @@ Merging locally will result in a local `dev` branch which is newer than on the s
 
 The merged branch will be deleted on the server - but not locally, so be careful not to work in your old branch (you may delete it also locally using `git branch -d <branch-name>`). If you need to make changes, it is recommended to create a new branch (i.e. repeat the process starting with step 1).
 
-### 7. Push to staging
+### 8. Push to staging
 
 Once a new patch is merged to the dev branch, it will be automatically deployed on the staging system by the GitHub Actions and it will be visible to the public (or rather to those who know where to look).
 
