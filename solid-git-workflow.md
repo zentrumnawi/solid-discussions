@@ -86,11 +86,16 @@ Doing so may save you some trouble, although the procedure is perfectly git stan
 
 #### s.o.l.i.d. Frontend
 
-s.o.l.i.d. makes use of [SemVer](https://semver.org/) to display and maintain version numbers. The mode of use might (and should) be discussed in the future, but for the time being, the version should be adjusted manually with every merge to `dev`. Since the Frontend does not expose an API where others depend on, it's not that critical. It is just a helper for our internal accounting.
+s.o.l.i.d. adheres (however loosely) to the [SemVer](https://semver.org/) concept to display and maintain version numbers. The version **must** be adjusted manually with every merge to `dev`. Since the Frontend does not expose an API where others depend on, it's not that critical. It is more of a helper for our internal accounting.
 
-The version is in the main repository's `package.json` (Line 3), please follow the `Major.minor.patch_tag` to the best of your knowledge; we have no real conventions yet. If in doubt, ask a colleague.
+The version is in the main repository's `package.json` (Line 3), please follow the `Major.minor.patch_tag` to the best of your knowledge.
+- `patch_tag` should be bumped upon smaller changes like typos, corrections of existing components etc.
+- `minor` version should be increased upon new features, medium changes, dependcy or framework upgrades
+- `major` version should be increased upon "breaking" changes, e.g. changes in connection with endpoints, major strategy changes etc.
 
-Since the s.o.l.i.d. Frontend is a monorepo but the apps are released and deployed independently, there is a difference between the s.o.l.i.d. version (i.e. the actual status of the repository's `dev` branch) and an app's release version. The release version (see [release howto](solid-frontend-release.md)) must be set manually. The major/minor/patch basics apply as well.
+I in doubt, ask a colleague.
+
+~Since the s.o.l.i.d. Frontend is a monorepo but the apps are released and deployed independently, there is a difference between the s.o.l.i.d. version (i.e. the actual status of the repository's `dev` branch) and an app's release version.~ 
 
 ### 7. Merge the pull request
 
