@@ -97,7 +97,13 @@ I in doubt, ask a colleague.
 
 ~Since the s.o.l.i.d. Frontend is a monorepo but the apps are released and deployed independently, there is a difference between the s.o.l.i.d. version (i.e. the actual status of the repository's `dev` branch) and an app's release version.~ 
 
-### 7. Merge the pull request
+### 7. Rebase your branch
+
+It may well be that some changes have been pushed to `dev` while you have been working on your branch. This happens all the time, especially when collaborating.
+
+To avoid conflicts, you should perform `git rebase dev` on your branch prior to merging. This will base your feature branch on the `dev` history and you should be ready for the next step.
+
+### 8. Merge the pull request
 
 If your task is finished, versioned and the reviewer approved the PR, you can merge the new branch to the `dev` branch. It is recommended to do this on GitHub and not locally (although it is possible).
 
@@ -109,7 +115,7 @@ Merging locally will result in a local `dev` branch which is newer than on the s
 
 The merged branch will be deleted on the server - but not locally, so be careful not to work in your old branch (you may delete it also locally using `git branch -d <branch-name>`). If you need to make changes, it is recommended to create a new branch (i.e. repeat the process starting with step 1).
 
-### 8. Push to staging
+### 9. Push to staging
 
 Once a new patch is merged to the dev branch, it will be automatically deployed on the staging system by the GitHub Actions and it will be visible to the public (or rather to those who know where to look).
 
