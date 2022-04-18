@@ -52,11 +52,13 @@ This command will take all changed files, add them to the index and commit them 
 
 ### 3. Push your changes to the server
 
-As soon as you have made enough changes to show them to others (this should be as early as possible), push them to the server:
+As soon as you have made enough changes to show them to the world (e.g. your fellow collaborators), push them to the server:
 
 ​	`git push`
 
-If your new branch is yet unknown to the server it will tell you to use `git push --set-upstream origin <branch name>`. Follow these instructions - it's sufficient to remember `git push`.
+If your new branch is yet unknown to the server, Git will tell you to use `git push --set-upstream origin <branch name>`. Follow these instructions - it's sufficient to remember `git push`.
+
+Remember that this step should be done as early as possible in your task: Think of it as backing up your data.
 
 ### 4. Create a Pull Request on GitHub
 
@@ -70,17 +72,19 @@ Continue working and pushing - all new commits will be integrated in the pull re
 
 GitHub Actions will even start to test and/or build the project after each push. If something fails, you will be notified and can take action. If the reviewer has comments or suggests changes, apply the changes, commit and push again.
 
-If you want to work on another branch, **make sure all your changes are committed** and follow the above instructions to start to a new branch or switch to an existing one with `git checkout <another-branch>`. If you do not want to commit (why wouldn't you?), you may [stash](https://www.git-scm.com/docs/git-stash) your changes.
+If you want to work on another branch, **make sure all your changes are committed** and follow the above instructions to start in a new branch or switch to an existing one with `git checkout <another-branch>`. If you do not want to commit (why wouldn't you?), you may [stash](https://www.git-scm.com/docs/git-stash) your changes.
+
+You should start a PR as soon as your code is doing something understandable, even if your feature is not yet ready - don't be shy, be transparent!
 
 ### 5. Collaborating
 
 If you are collaborating with colleagues (co-authoring) on a PR, others may push commits to the same branch, resulting in an `origin` branch which is never than your local branch. 
 
-This is going to result in merge conflicts if you try to push your next commit. You will then have to `pull` the branch and merge it into your local branch. Usually, this is a guided process and works fine, but sometimes it can get a little messy or confusing. 
+This is usually going to result in merge conflicts if you try to push your next commit. You will then have to `pull` the branch and merge it into your local branch. Usually, this is a guided process and works fine, but sometimes it can get a little messy or confusing. 
 
-So remember to `git pull` **before** you continue working if someone else has been pushing changes.
+So remember to `git pull` **before** you continue working if someone else has been pushing changes (make sure you receive all notifications of interest).
 
-Doing so may save you some trouble, although the procedure is perfectly git standard and considered normal.
+Doing so may save you some trouble, although the procedure of merging intermittent changes is perfectly git standard and considered normal.
 
 ### 6. Adjust the version
 
@@ -90,26 +94,30 @@ s.o.l.i.d. adheres (however loosely) to the [SemVer](https://semver.org/) concep
 
 The version is in the main repository's `package.json` (Line 3), please follow the `Major.minor.patch_tag` to the best of your knowledge.
 - `patch_tag` should be bumped upon smaller changes like typos, corrections of existing components etc.
-- `minor` version should be increased upon new features, medium changes, dependcy or framework upgrades
+- `minor` version should be increased upon new features, medium changes, dependency or framework upgrades
 - `major` version should be increased upon "breaking" changes, e.g. changes in connection with endpoints, major strategy changes etc.
 
-I in doubt, ask a colleague.
+If in doubt, ask a colleague.
 
 ~Since the s.o.l.i.d. Frontend is a monorepo but the apps are released and deployed independently, there is a difference between the s.o.l.i.d. version (i.e. the actual status of the repository's `dev` branch) and an app's release version.~ 
 
 ### 7. Rebase your branch
 
-It may well be that some changes have been pushed to `dev` while you have been working on your branch. This happens all the time, especially when collaborating.
+It may well be that some changes have been pushed to `origin/dev` while you have been working locally on your branch. This happens all the time, especially when collaborating.
 
-To avoid conflicts, you should perform `git rebase dev` on your branch prior to merging. This will base your feature branch on the `dev` history and you should be ready for the next step.
+To avoid conflicts, you need to make sure that your local feature branch is still a descendant of `origin/dev` so you need to perform a rebase on your branch prior to merging:
+
+```git rebase dev```
+
+This will base your feature branch on the `dev` history and you should be ready for the next step.
 
 ### 8. Merge the pull request
 
-If your task is finished, versioned and the reviewer approved the PR, you can merge the new branch to the `dev` branch. It is recommended to do this on GitHub and not locally (although it is possible).
+If your task is finished, versioned and the reviewer approved the PR (or you feel confident enough), you can merge the new branch to the `dev` branch. It is recommended to do this on GitHub and not locally (although it is possible).
 
 Merging on GitHub has the advantage that it is a guided, transparent and comprehensive process and the `dev` branch on the server will always be the most actual.
 
-Merging locally will result in a local `dev` branch which is newer than on the server. This interferes with the "one source of truth"-idea since the actual source of truth is not accessible to everybody. So you should rather do it on GitHub and everything will be fine.
+Merging locally will result in a local `dev` branch which is newer than on the server. This somehow interferes with the "one source of truth"-idea since the actual source of truth (your newest development) is not accessible to everybody. So you should rather do it on GitHub and everything will be fine.
 
 **Important:** Remember to pull your `dev` branch after the merge to be up to date (see step 1). New branches should always be based on the most recent `dev` branch.
 
