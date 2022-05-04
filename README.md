@@ -8,3 +8,5 @@ Workflows &amp; feature discussions
 * [s.o.l.i.d. Frontend local setup (DE)](solid-frontend_de.md)
 ----
 * [s.o.l.i.d. Frontend release](solid-frontend-release.md)
+----
+* [Angular Update](angular-update.md)
