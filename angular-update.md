@@ -10,3 +10,5 @@ Das allgemeine Vorgehen ist wie folgt:
 * immer nur _eine_ Major Version pro Update
 * alle Probleme beheben bis die App sauber funktioniert (z.B. Syntax-Änderungen, Deprecations...)
 * anschließend kann erst auf die nächste Major Version upgegraded werden
+
+Tipp: Den Angular-Update-Branch in einem eigenen, neu geklonten Repository durchführen, dann wirft es nicht die dependencies durcheinander.
