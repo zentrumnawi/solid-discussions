@@ -13,71 +13,61 @@ Additionally, a [GitHub](https://github.com)-account is required in order to upl
 
 ## Git - software versioning
 
-*Git* is one of the most renowned versioning tools. Richtig eingesetzt sorgt es dafür, dass vergangene Versionen (von Dateien) immer wieder hergestellt werden können und Fortschritte in verschiedenen Entwicklungszweigen und von verschiedenen Personen getrennt bearbeitet werden können. Außerdem ist immer transparent, welche Änderung wann und von wem gemacht wurde.
+*Git* is one of the most renowned versioning tools. Used correctly, it ensures that past versions (of files) can always be restored and progress can be processed separately in different development branches and by different people. In addition, it is always transparent which change was made when and by whom.
 
-Die Versionierung arbeitet wirklich auf _Verzeichnis-_ und _Dateiebene_ des Betriebssystems. D.h., wenn von einer Version zur nächsten oder in einen anderen Entwicklungszweig ("`branch`")  geschaltet wird, verändert sich wirklich die Dateistruktur. Wird in einem branch eine Datei gelöscht, taucht sie im Verzeichnis wieder auf, sobald man auf einen anderen Branch wechselt, in dem die Datei nicht gelöscht wurde.
+Versioning really works at _directory_ and _file_ level of the operating system. This means that if you switch from one version to the next or to another development branch, the file structure effectively changes. If a file is deleted in a branch, it reappears in the directory as soon as you switch to another branch in which the file still exists.
 
-Änderungen an der Dateistruktur (z.B. Änderungen an Dateien) müssen aktiv in einem so genannten `commit` versioniert werden. Durch das *committen* wird eine Änderung an Git übergeben und mit einer Versionsnummer in der *git history* gespeichert.
+Changes to the file structure (e.g. changes to files) must be actively versioned in a so-called `commit`. By *committing*, a change is transferred to Git and saved with a version number in the *git history*.
+Git also establishes the connection with the development platform *GitHub*, where our (opensource) code is stored and in which all versions are recorded. There is also a [guide](solid-git-workflow.md) on how to work correctly with Git in our projects.
 
-Git stellt auch die Verbindung mit der Entwicklungslpattform *GitHub* her, auf der unser Code liegt und in dem alle Versionen festgehalten werden. Es gibt auch eine [Anleitung](solid-git-workflow.md), wie in unseren Projekten korrekt mit Git gearbeitet wird.
+Git is a command line tool in itself, but there are also user interfaces and the usual Git functions are well integrated into most development environments (including VSCode).
 
-Git ist an sich ein Kommandozeilen-Tool, es gibt aber auch Benutzeroberflächen und in die meisten Entwicklungsumgebungen (so auch in VSCode) sind die üblichen Git-Funktionen gut integriert.
+Git must be installed on the respective operating system. For Windows-Users we recommend *Git for Windows*: https://gitforwindows.org/
 
-Git muss auf dem jeweiligen Betriebssystem installiert werden. Für Windows-User wird *Git for Windows* empfohlen: https://gitforwindows.org/
-
-## Node.js - Javascript Laufzeitumgebung
-
-Damit Javascript auf dem Rechner ausgeführt und verarbeitet werden kann, muss Node.js installiert werden: https://nodejs.org/de/download/
+## Node.js - Javascript Runtime Environment
+Node.js must be installed so that Javascript can be executed and processed on the computer: https://nodejs.org/de/download/
 
 ## Yarn - Package Manager
 
-Moderne Software basiert stark auf vielen einzelnen Software-Paketen, die verschiedene Unteraufgaben und Sonderfunktionen übernehmen, so dass nur der Programmiercode wirklich neu geschrieben werden muss, der für die jeweilige Software spezifisch ist.
+Modern software is heavily based on many individual software packages that perform various subtasks and special functions, so that only the programming code that is specific to the software in question really needs to be rewritten.
 
-Alle in s.o.l.i.d. verwendeten *packages* sind open source und werden von einem *Package Manager* verwaltet. Wir verwenden den Package-Manager *yarn*.
+All *packages* used in s.o.l.i.d. are open source and are managed by a *package manager*. We use the package manager *yarn*.
 
-Der Package-Manager installiert und aktualisiert alle Abhängigkeiten und Programmbibliotheken, die von unserem Framework benötigt werden.
+The package manager installs and updates all dependencies and programme libraries required by our framework.
 
-Yarn muss heruntergeladen und für das jeweilige Betriebssystem installiert werden.
-https://classic.yarnpkg.com/en/docs/install
+Yarn must be downloaded and installed for the respective operating system: https://classic.yarnpkg.com/en/docs/install
 
-**Achtung: Derzeit setzen wir *yarn classic* ein und nicht die aktuellste Version.**
+## Visual Studio Code - Work environment
 
-## Visual Studio Code - Entwicklungsumgebung
+In theory, only text files need to be changed for programming - but a development environment (*IDE - Integrated development environment*) supports programming with numerous search and validation functions and makes the work much easier, not least due to the good integration with Git.
 
-Theoretisch müssen zum Programmieren nur Textdateien verändert werden - aber eine Entwicklungsumgebung (*IDE - Integrated development environment*) unterstützt das Programmieren mit zahlreichen Such- und Validierungsfunktionen und erleichtert die Arbeit immens, nicht zuletzt aufgrund der guten Integration mit Git.
+In our project, we use the *VSCode* development environment almost exclusively, as it is free and a powerful tool. Other development environments can of course be used according to personal preference.
 
-In unserem Projekt wird fast ausschließlich die Entwicklungsumgebung *VSCode* verwendet, da sie kostenlos und ein mächtiges Tool ist. Andere Entwicklungsumgebungen können natürlich nach persönlicher Präferenz benutzt werden.
-
-Eine Entwicklungsumgebung (*IDE - Integrated development environment*) unterstützt das Programmieren mit zahlreichen Such- und Validierungsfunktionen. 
-
-https://code.visualstudio.com/Download
+A development environment (*IDE - Integrated development environment*) supports programming with numerous search and validation functions: https://code.visualstudio.com/Download
 
 ## GitHub-Account
 
-GitHub ist eine Online-Plattform zur Software-Entwicklung im Team und eng mit Git verzahnt. Die Software-Repräsentation eines Projekts wird als `repository` bezeichnet.
+GitHub is an online platform for software development in teams and is closely interlinked with the Git versioning tool. The software representation of a project is called a _repository_.
 
-Ein repository (kurz auch 'repo' genannt) enthält alle Dateien, die zum Projekt gehören, sowie die komplette Entwicklungsgeschichte. 
+A repository (also known as a ‘repo’ for short) contains all files belonging to the project as well as the complete development history. 
 
-Außerdem werden verschiedene Funktionen von der Online-Plattform bereitgestellt, wie z.B. eine Issue-Verwaltung für anstehende Aufgaben und verschiedene Projektplanungstools sowie Workflows zum Testen und Vorbereiten von Code-Änderungen.
+Various functions are also provided by the online platform, such as issue management for upcoming tasks and various project planning tools as well as workflows for testing and preparing code changes.
 
-http://github.com &rarr; Sign up
+http://github.com &rarr; Sign up
 
 https://docs.github.com/en/get-started/quickstart/set-up-git
 
-siehe hier insbesondere Schritte 2 und 3. Empfohlen wird die Authentifizierung per SSH - damit ist die Eingabe eines Passworts bei jeder Interaktion mit GitHub nicht erforderlich, es muss aber ein Schlüsselpaar erzeugt werden; dies ist auch in folgendem Artikel erläutert: https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh
+see in particular steps 2 and 3 here. Authentication via SSH is recommended - this means that it is not necessary to enter a password every time you interact with GitHub, but a key pair must be generated; this is also explained in the following article: https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh
 
 ## Getting started
 
-1. Zunächst müssen alle o.g. Tools installiert und ein GitHub-Account angelegt und eingerichtet werden
-2. Auf der eigenen Festplatte muss ein Ordner angelegt werden, in welchen das repository geklont werden soll. Hinweis: Die Packages brauchen relativ viel Platz.
+A folder into which the repository is to be cloned must be created on the local hard drive. Note: The packages require a relatively large amount of space.
 
-Die folgenden Schritte können im Prinzip von der Kommandozeile (*Git Bash* oder der Windows-Eingabeaufforderung / CMD) ausgeführt werden. Es ist aber zweckmäßig, das Terminal aus VSCode heraus zu starten:
+In principle, the following steps can be carried out from the command line (*Git Bash* or the Windows command prompt / CMD). However, it is advisable to start the terminal from VSCode:
 
-3. VSCode starten, den angelegten (leeren) Ordner öffnen und ein Terminal aufrufen (in der Standardkonfiguration mit `Strg+ö`). Das s.o.l.i.d.-Frontend-Repository wird mit dem Befehl `git clone https://github.com/zentrumnawi/solid-frontend ` in den aktuellen Ordner geklont.
-4. Die benötigten Packages werden mit dem Befehl `yarn` installiert, dies dauert eine Weile.
-5. Nach Abschluss der Installation kann das Frontend lokal gestartet werden: `yarn run serve <app-name>`. Nach Abschluss des Startprozesses wird eine URL (`http://localhost:4200`) angezeigt, mit der sich ein Browserfenster öffnet, in welchem die App ausgespielt wird und angesehen werden kann. Die Daten werden aus den Server-Schnittstellen des Staging-Systems geladen.
-6. **Wichtig: Bevor der Code geändert wird, muss ein neuer branch im repository erzeugt werden!** Damit wird sichergestellt, dass alle Änderungen getrennt vom funktionierenden Status Quo sind. Für die Verwendung von Git im s.o.l.i.d.-Projekt gibt es eine eigene [Anleitung](solid-git-workflow.md).
+3. Start VSCode, open the created (empty) folder and call a terminal. The s.o.l.i.d. frontend repository is cloned into the current folder using the command `git clone https://github.com/zentrumnawi/solid-frontend `.
+4. The required packages are installed with the command `yarn`; this takes a while.
+5. After the installation is complete, the frontend can be started locally: `npx run <app-name>:serve`. Once the start process is complete, a URL (`http://localhost:4200`) is displayed, which opens a browser window in which the app is displayed and can be viewed. The data is loaded from the server interfaces of the _staging_ system.
+6 **Important: Before the code is changed, a new branch must be created in the repository!** This ensures that all changes are separate from the working status quo. There is a separate [instruction](solid-git-workflow.md) for the use of Git in the s.o.l.i.d. project.
 
-Im Prinzip kann jetzt "entwickelt" werden. Nach jeder gespeicherten Änderung im Code wird die App neu geladen und kann im Browser direkt angesehen und getestet werden.
-
-Alle Änderungen sollten gemäß unserer [Git-Coding-Rules](solid-coding-rules.md) regelmäßig *committed* werden.
+In principle, you can now ‘develop’. After each saved change in the code, the app is reloaded
