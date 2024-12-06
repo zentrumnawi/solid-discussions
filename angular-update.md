@@ -1,14 +1,14 @@
 ## Angular Update
 
-Für Angular gibt es in der Regel zweimal im Jahr (Frühjahr und Herbst) ein Upgrade auf die nächste Major Version.
+Angular is usually upgraded to the next major version twice a year (spring and autumn).
 
-Da wir ein NX Monorepo für s.o.l.i.d. verwenden, muss das Upgrade mit den Upgrade-Tools durchgeführt werden - siehe [Dokumentation](https://nx.dev/using-nx/updating-nx).
+As we use an NX monorepo for s.o.l.i.d., the upgrade must be carried out using the upgrade tools - see [Documentation](https://nx.dev/using-nx/updating-nx).
 
-_Hinweis: Die Migration mit den Angular-Tools funktioniert nicht unbedingt für Libraries sondern nur für die primäre App!_
+Note: The migration with the Angular tools does not necessarily work for libraries but only for the primary app.
 
-Das allgemeine Vorgehen ist wie folgt:
-* immer nur _eine_ Major Version pro Update
-* alle Probleme beheben bis die App sauber funktioniert (z.B. Syntax-Änderungen, Deprecations...)
-* anschließend kann erst auf die nächste Major Version upgegraded werden
+The general procedure is as follows:
+* only _one_ major version per update
+* Fix all problems until the app works properly (e.g. syntax changes, deprecations...)
+* only then can you upgrade to the next major version
 
-Tipp: Den Angular-Update-Branch in einem eigenen, neu geklonten Repository durchführen, dann wirft es nicht die dependencies durcheinander.
+Tip: Perform the Angular update branch in a separate, newly cloned repository, then it won't mess up the dependencies.
